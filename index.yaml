@@ -7,13 +7,13 @@ entries:
       catalog.cattle.io/namespace: mcs-addon-system
       catalog.cattle.io/os: linux
       catalog.cattle.io/permits-os: linux
-      catalog.cattle.io/rancher-version: '>= 2.10.0-0 < 2.13.0-0'
+      catalog.cattle.io/rancher-version: ‘>= 2.13.0-0 < 2.14.0-0’
       catalog.cattle.io/ui-component: mcs-ext-chart
     apiVersion: v2
     appVersion: 0.0.1
-    created: "2025-12-16T17:52:18.726151+08:00"
+    created: "2025-12-16T17:58:36.59126+08:00"
     description: Multi-cluster Service Extension Chart
-    digest: 2891756340e97f3a7d883aa9a17ee82eac22260899532068877f5725faa42919
+    digest: 952da42d299c71f263cc8c0a34b7bdb026c6d4ed48f97fa5aa2093c56d0365c0
     icon: https://pub-68160d88f4744423960a290fc7a5031d.r2.dev/mcs-icon.png
     name: mcs-ext-chart
     urls:
