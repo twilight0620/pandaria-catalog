@@ -7,18 +7,18 @@
 # Debug mode
 debug: false
 # Cluster ID
-clusterID: "cluster3"
+clusterID: "cluster2"
 # Enable API service
 enableAPIService: true
 # Data plane configuration
 dataPlane:
-  namespace: "cs-hnkpt"
+  namespace: "cs-dcd2x"
   caCert: ""
-  apiServer: "https://3.27.124.124.sslip.io/k8s/clusters/local"
-  token: "eyJhbGciOiJSUzI1NiIsImtpZCI6InQ2aFh2Q1h5Yk04SUhmekVMLWNyMHBNeHNBMFV2RlozVzJOZklsYmNKVWsifQ.eyJpc3MiOiJrdWJlcm5ldGVzL3NlcnZpY2VhY2NvdW50Iiwia3ViZXJuZXRlcy5pby9zZXJ2aWNlYWNjb3VudC9uYW1lc3BhY2UiOiJjcy1obmtwdCIsImt1YmVybmV0ZXMuaW8vc2VydmljZWFjY291bnQvc2VjcmV0Lm5hbWUiOiJjbHVzdGVyMyIsImt1YmVybmV0ZXMuaW8vc2VydmljZWFjY291bnQvc2VydmljZS1hY2NvdW50Lm5hbWUiOiJjbHVzdGVyMyIsImt1YmVybmV0ZXMuaW8vc2VydmljZWFjY291bnQvc2VydmljZS1hY2NvdW50LnVpZCI6IjkwZTI4ODZiLWYzNjMtNGNkMy04ZmM2LTgwMDRhZTNiMWUwOCIsInN1YiI6InN5c3RlbTpzZXJ2aWNlYWNjb3VudDpjcy1obmtwdDpjbHVzdGVyMyJ9.bhQz7VqWsqFmlzwE7mmqBc-HNAE7kB-rpeDICQ-K-xJsJ1FkYqLw2EMytxcoRLz5O3sAn5u-pYO8Dw7TuYcWnXyTvZcjni5qkqbUrf9ZYKO8xaM-GzVAksS-6GlvCHesbMTQGgmVk1ke5i8PSSEjmoyCMPx-kg7_yauAJrNPLjrM8GyH8AfkvpudrD6tTXCPDft4SOHoyU3IxVJ-DhVn529qyjgT3DGEXlIhLeo4abcUfHUtYTfsuJ6uf0-10ROfYjkpm6PQ8q3NHOuT4Mu91bF6yWSw13g4ybTwActE78QwQvtpSpi2QcNKLxohP3GK6fPnIb7_2diroXwqn8cUNA"
+  apiServer: "https://54.66.164.194.sslip.io/k8s/clusters/local"
+  token: "eyJhbGciOiJSUzI1NiIsImtpZCI6ImlzOFNmdXZkc2g2bmkzWGdxNFR5QXczQk9ZVlQzV3lSSzlRbmE5U3FKbVkifQ.eyJpc3MiOiJrdWJlcm5ldGVzL3NlcnZpY2VhY2NvdW50Iiwia3ViZXJuZXRlcy5pby9zZXJ2aWNlYWNjb3VudC9uYW1lc3BhY2UiOiJjcy1kY2QyeCIsImt1YmVybmV0ZXMuaW8vc2VydmljZWFjY291bnQvc2VjcmV0Lm5hbWUiOiJjbHVzdGVyMiIsImt1YmVybmV0ZXMuaW8vc2VydmljZWFjY291bnQvc2VydmljZS1hY2NvdW50Lm5hbWUiOiJjbHVzdGVyMiIsImt1YmVybmV0ZXMuaW8vc2VydmljZWFjY291bnQvc2VydmljZS1hY2NvdW50LnVpZCI6Ijk0Nzk2YzUzLTZkZjEtNDc0My04NzgxLWU2ZTYxMGU3NWRkMyIsInN1YiI6InN5c3RlbTpzZXJ2aWNlYWNjb3VudDpjcy1kY2QyeDpjbHVzdGVyMiJ9.LmkoVpWQnfn3uYaqKEcjz80KyvXADvhRxkOvQ6LSAnU6u-wG1NGVmmAhCMeFVysbXam3IyI7HEV_OjtR45yTirZbZGstB7z049HGsXz2oU5pDtsp3Q1U-S67CSTpeoZzmS-iroA9xdrBQuZHghNeaVSOO1pRUoqUXGA84BpBXCYqDyLlVa1L_XtdFAn39yOes0wBv79MB5SzStBWOtQYueuqr2holvzdemagVu_sPhmXLhhv632WroaTFaTZv1enPJTugwiNG8FY5pAdZQIu00gEzZ29eluyCh9IIzS5pUVLfhVlJHENUTdXGWalc_K3xNPzgq86XmDc-dzNze0wbQ"
   insecure: true
 lighthouseAgent:
-  apiServer: "3.27.124.124.sslip.io/k8s/clusters/local"
+  apiServer: "54.66.164.194.sslip.io/k8s/clusters/local"
   replicaCount: 1
   pullPolicy: "IfNotPresent"
   resources: {}
@@ -37,9 +37,9 @@ mcs:
   # Enable automatic CIDR detection for custom clusters
   autoDetectCIDR: true
   # Default cluster CIDR (used when auto-detection fails)
-  defaultClusterCIDR: "10.120.0.0/16"
+  defaultClusterCIDR: "10.110.0.0/16"
   # Default service CIDR (used when auto-detection fails)
-  defaultServiceCIDR: "10.121.0.0/16"
+  defaultServiceCIDR: "10.111.0.0/16"
   # Enable ServiceCIDR routing
   enableServiceCIDRRouting: false
 # Controller configuration

@@ -2,9 +2,9 @@
 # Global configuration
 global:
   # Installation type: global, cluster, submariner
-  installationType: global
+  installationType: cluster
   cattle:
-    systemDefaultRegistry: ""
+    systemDefaultRegistry: "registry.rancher.cn"
     provisioningNamespace: "fleet-default"
 # Sub-chart configuration
 mcs-addon-crd:
