@@ -30,7 +30,7 @@ spec:
           env:
           - name: SUBMARINER_CLUSTERID
             value: {{ .Values.clusterID }}
-          image: {{ .Values.lighthouseCoredns.image.repository }}:{{ .Values.lighthouseCoredns.image.tag }}
+          image: {{ template "system_default_registry" $ }}{{ .Values.lighthouseCoredns.image.repository }}:{{ .Values.lighthouseCoredns.image.tag }}
           imagePullPolicy: {{ .Values.lighthouseCoredns.image.pullPolicy }}
           ports:
             - containerPort: 80

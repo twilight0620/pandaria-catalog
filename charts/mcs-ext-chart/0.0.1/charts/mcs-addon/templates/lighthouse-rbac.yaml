@@ -87,6 +87,7 @@ rules:
       - services
       - namespaces
       - endpoints
+      - configmaps
     verbs:
       - get
       - list
