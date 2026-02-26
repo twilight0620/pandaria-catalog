@@ -67,10 +67,12 @@ spec:
         - secret:
             defaultMode: 420
             items:
-              - key: ca.crt
-                path: ca.crt
               - key: token
                 path: token
+              {{- if not .Values.dataPlane.insecure }}
+              - key: ca.crt
+                path: ca.crt
+              {{- end }}
             secretName: broker-secret
           name: agent-secret
 {{- end }}
