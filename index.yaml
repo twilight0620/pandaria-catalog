@@ -5,23 +5,23 @@ entries:
       catalog.cattle.io/auto-install: kopilot-crd=match
       catalog.cattle.io/certified: rancher
       catalog.cattle.io/display-name: Kopilot
-      catalog.cattle.io/kube-version: '>= 1.34.0-0 < 1.37.0-0'
+      catalog.cattle.io/kube-version: '>= 1.33.0-0 < 1.37.0-0'
       catalog.cattle.io/namespace: kopilot-system
       catalog.cattle.io/os: linux
       catalog.cattle.io/permits-os: linux
-      catalog.cattle.io/rancher-version: '>= 2.15.0-0 < 2.16.0-0'
+      catalog.cattle.io/rancher-version: '>= 2.14.0-0 < 2.16.0-0'
       catalog.cattle.io/release-name: kopilot
       catalog.cattle.io/type: cluster-tool
     apiVersion: v2
     appVersion: 0.6.0
-    created: "2026-09-01T13:36:52.086575+08:00"
+    created: "2026-09-01T17:06:42.237755+08:00"
     dependencies:
     - condition: langfuse.deploy
       name: langfuse
       repository: file://./charts/langfuse
       version: 1.5.22
     description: Helm chart for managing Kopilot AI Agent resources
-    digest: 86f038e3ac48703e4ab93c90c9daa70e762aab716bfd77c5284c5ec3dca3eccf
+    digest: 8b8ebdef7593c45e9ca716fe37434907851d5c3b78bbca2f2bd8da338e3dfd4f
     home: https://github.com/cnrancher/kopilot
     maintainers:
     - email: Zhenyang.Zhao@suse.com
@@ -36,18 +36,18 @@ entries:
   - annotations:
       catalog.cattle.io/certified: rancher
       catalog.cattle.io/hidden: "true"
-      catalog.cattle.io/kube-version: '>= 1.34.0-0 < 1.37.0-0'
+      catalog.cattle.io/kube-version: '>= 1.33.0-0 < 1.37.0-0'
       catalog.cattle.io/namespace: kopilot-system
       catalog.cattle.io/os: linux
       catalog.cattle.io/permits-os: linux
-      catalog.cattle.io/rancher-version: '>= 2.15.0-0 < 2.16.0-0'
+      catalog.cattle.io/rancher-version: '>= 2.14.0-0 < 2.16.0-0'
       catalog.cattle.io/release-name: kopilot-crd
       catalog.cattle.io/type: cluster-tool
     apiVersion: v2
     appVersion: 0.6.0
-    created: "2026-09-01T13:36:52.137315+08:00"
+    created: "2026-09-01T17:06:42.298226+08:00"
     description: Helm chart for Kopilot CRDs
-    digest: 88d3a4e8cd7251e5b3cf430e1f0324f55e87f985eb643d6aad6fce7ef6d83385
+    digest: 451227e2b5912793554a9ced85719c3eab66a4bee01559000c02e609fbcf3ad0
     home: https://github.com/cnrancher/kopilot
     maintainers:
     - email: Zhenyang.Zhao@suse.com
@@ -65,11 +65,11 @@ entries:
       catalog.cattle.io/namespace: mcs-addon-system
       catalog.cattle.io/os: linux
       catalog.cattle.io/permits-os: linux
-      catalog.cattle.io/rancher-version: '>= 2.15.0-0 < 2.16.0-0'
+      catalog.cattle.io/rancher-version: '>= 2.14.0-0 < 2.16.0-0'
       catalog.cattle.io/ui-component: mcs-ext-chart
     apiVersion: v2
     appVersion: 0.0.3
-    created: "2026-08-31T15:38:29.811399+08:00"
+    created: "2026-09-01T17:06:32.363402+08:00"
     dependencies:
     - name: mcs-addon
       repository: file://./charts/mcs-addon
@@ -81,7 +81,7 @@ entries:
       repository: file://./charts/submariner-operator
       version: 0.0.1
     description: Multi-cluster Service Extension Chart
-    digest: 4426970620c0a24abaa81544deaa3a5b79931f8105c69a0dc40143ba86ae6086
+    digest: f1204dd5db4f2b972c9f3d09c7dc1a3d423e234802acd01288de45cc09509840
     icon: https://pub-68160d88f4744423960a290fc7a5031d.r2.dev/mcs-icon.png
     name: mcs-ext-chart
     urls:
@@ -330,19 +330,19 @@ entries:
       catalog.cattle.io/auto-install: rancher-cce-operator-crd=match
       catalog.cattle.io/certified: rancher
       catalog.cattle.io/hidden: "true"
-      catalog.cattle.io/kube-version: '>= 1.34.0-0 < 1.37.0-0'
+      catalog.cattle.io/kube-version: '>= 1.33.0-0 < 1.37.0-0'
       catalog.cattle.io/namespace: cattle-system
       catalog.cattle.io/os: linux
       catalog.cattle.io/permits-os: linux
       catalog.cattle.io/provides-gvr: cceclusterconfigs.cce.pandaria.io/v1
-      catalog.cattle.io/rancher-version: '>= 2.15.0-0 < 2.16.0-0'
+      catalog.cattle.io/rancher-version: '>= 2.14.0-0 < 2.16.0-0'
       catalog.cattle.io/release-name: rancher-cce-operator
       catalog.cattle.io/scope: management
     apiVersion: v2
     appVersion: 0.11.0
-    created: "2026-08-31T14:24:00.236381+08:00"
+    created: "2026-09-01T17:06:35.422385+08:00"
     description: A Helm chart for provisioning CCE clusters
-    digest: bf5876b411192657de70257ac889a875726b64a7adfa0d15a5e64932861bc744
+    digest: c872cc82eefb00837aa3e46e8d90d9481f17d49c90166f37f4899a8d82eca764
     home: https://github.com/cnrancher/cce-operator
     name: rancher-cce-operator
     sources:
@@ -426,17 +426,17 @@ entries:
   - annotations:
       catalog.cattle.io/certified: rancher
       catalog.cattle.io/hidden: "true"
-      catalog.cattle.io/kube-version: '>= 1.34.0-0 < 1.37.0-0'
+      catalog.cattle.io/kube-version: '>= 1.33.0-0 < 1.37.0-0'
       catalog.cattle.io/namespace: cattle-system
       catalog.cattle.io/os: linux
       catalog.cattle.io/permits-os: linux
-      catalog.cattle.io/rancher-version: '>= 2.15.0-0 < 2.16.0-0'
+      catalog.cattle.io/rancher-version: '>= 2.14.0-0 < 2.16.0-0'
       catalog.cattle.io/release-name: rancher-cce-operator-crd
     apiVersion: v2
     appVersion: 0.11.0
-    created: "2026-08-31T14:24:01.05832+08:00"
+    created: "2026-09-01T17:06:36.532924+08:00"
     description: CCE Operator CustomResourceDefinitions
-    digest: e3a3b45e6a05c0024d66cd1279737178e1de2ef3b5a916ea061975df4ca5a5c7
+    digest: 082e8af75fa3bd8b732ec853a9f733f89d6392f9e6c59bb0d8272b2c08093bcd
     name: rancher-cce-operator-crd
     urls:
     - assets/rancher-cce-operator-crd/rancher-cce-operator-crd-110.0.0+up0.11.0.tgz
@@ -1220,18 +1220,18 @@ entries:
       catalog.cattle.io/auto-install: rancher-tke-operator-crd=match
       catalog.cattle.io/certified: rancher
       catalog.cattle.io/hidden: "true"
-      catalog.cattle.io/kube-version: '>= 1.34.0-0 < 1.37.0-0'
+      catalog.cattle.io/kube-version: '>= 1.33.0-0 < 1.37.0-0'
       catalog.cattle.io/namespace: cattle-system
       catalog.cattle.io/os: linux
       catalog.cattle.io/provides-gvr: tkeclusterconfigs.tke.cattle.io/v1
-      catalog.cattle.io/rancher-version: '>= 2.15.0-0 < 2.16.0-0'
+      catalog.cattle.io/rancher-version: '>= 2.14.0-0 < 2.16.0-0'
       catalog.cattle.io/release-name: rancher-tke-operator
       catalog.cattle.io/scope: management
     apiVersion: v2
     appVersion: 2.15.1
-    created: "2026-08-31T15:10:14.376086+08:00"
+    created: "2026-09-01T17:06:42.450933+08:00"
     description: A Helm chart for provisioning TKE clusters
-    digest: d6a4d9dfd8359cecefa08fd71d4a0afeac5200954a97f8105d3fb22a835df7a6
+    digest: 354e2336174b0ce86a932ba7e01487c342978fa9c606a79a74515d41b71c12f1
     home: https://github.com/cnrancher/tke-operator
     name: rancher-tke-operator
     sources:
@@ -1381,16 +1381,16 @@ entries:
   - annotations:
       catalog.cattle.io/certified: rancher
       catalog.cattle.io/hidden: "true"
-      catalog.cattle.io/kube-version: '>= 1.34.0-0 < 1.37.0-0'
+      catalog.cattle.io/kube-version: '>= 1.33.0-0 < 1.37.0-0'
       catalog.cattle.io/namespace: cattle-system
       catalog.cattle.io/os: linux
-      catalog.cattle.io/rancher-version: '>= 2.15.0-0 < 2.16.0-0'
+      catalog.cattle.io/rancher-version: '>= 2.14.0-0 < 2.16.0-0'
       catalog.cattle.io/release-name: rancher-tke-operator-crd
     apiVersion: v2
     appVersion: 2.15.1
-    created: "2026-08-31T15:10:14.402018+08:00"
+    created: "2026-09-01T17:06:42.48685+08:00"
     description: TKE Operator CustomResourceDefinitions
-    digest: fe08363c8bf2382c937512352c79a5f1cbd2883c8ed9d9607a777c7dc43f3d59
+    digest: b64ea70f726feb8322d2c54c75ff89845fff0496f1e6727b538a3811f807904f
     name: rancher-tke-operator-crd
     urls:
     - assets/rancher-tke-operator-crd/rancher-tke-operator-crd-110.0.0+up2.15.1.tgz
